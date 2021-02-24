@@ -1,0 +1,39 @@
+{
+  "name": "mandelbrot-wasm",
+  "version": "0.1.0",
+  "description": "render the mandelbrot set, with wasm",
+  "main": "index.js",
+  "bin": {
+    "create-wasm-app": ".bin/create-wasm-app.js"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rustwasm/create-wasm-app.git"
+  },
+  "keywords": [
+    "fun",
+    "mandelbrot",
+    "fractal",
+    "webassembly",
+    "wasm",
+    "rust",
+    "webpack"
+  ],
+  "author": "Bryan Brady <bryan.brady@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bryanbrady/mandelbrot-wasm/issues"
+  },
+  "homepage": "https://github.com/bryanbrady/mandelbrot-wasm#readme",
+  "devDependencies": {
+    "mandelbrot-wasm": "file:../pkg",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "copy-webpack-plugin": "^5.0.0"
+  }
+}
