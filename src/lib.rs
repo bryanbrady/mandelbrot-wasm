@@ -26,8 +26,8 @@ macro_rules! console_log {
     ($($t:tt)*) => (log(&format_args!($($t)*).to_string()))
 }
 
-const MAX_ITER: u32 = 1000;
-const BAILOUT: f64 = 1000.0;
+const MAX_ITER: u32 = 100;
+const BAILOUT: f64 = 100.0;
 
 pub struct Color {
     r: u8,
